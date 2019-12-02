@@ -8,16 +8,10 @@
         <version>2.2.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.imooc</groupId>
-    <artifactId>product</artifactId>
+    <groupId>com.immoc</groupId>
+    <artifactId>client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>product</name>
-    <packaging>pom</packaging>
-    <modules>
-        <module>common</module>
-        <module>client</module>
-        <module>server</module>
-    </modules>
+    <name>client</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -29,43 +23,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.cloud</groupId>-->
-        <!--<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
-        <!--<exclusions>-->
-        <!--<exclusion>-->
-        <!--<artifactId>guava</artifactId>-->
-        <!--<groupId>com.google.guava</groupId>-->
-        <!--</exclusion>-->
-        <!--</exclusions>-->
-        <!--</dependency>-->
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
         </dependency>
 
         <dependency>
@@ -85,9 +42,10 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
+            <groupId>com.immoc</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
@@ -100,11 +58,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>com.immoc</groupId>-->
-<!--                <artifactId>product-common</artifactId>-->
-<!--                <version>${product-common.version}</version>-->
-<!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
 
